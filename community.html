@@ -1,0 +1,186 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img.jpg" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        .forum-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .forum-header {
+            background-color: #4a5568;
+            color: white;
+            padding: 16px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .forum-content {
+            padding: 16px;
+        }
+        .forum-card {
+            background-color: #edf2f7;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .forum-card button {
+            background-color: #4a5568;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-roboto">
+    <header class="bg-gray-300 p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <i class="fas fa-stamp text-xl mr-2"></i>
+            <span class="text-xl font-bold">Stamp Nation</span>
+        </div>
+        <nav class="space-x-4">
+            <a class="text-light" href="home2.html">
+                Home
+               </a>
+            <a class="text-light" href="resource.html">
+                Resources
+               </a>
+               <a class="text-light" href="search.html">
+                   Search
+                  </a>
+                  <a class="text-light" href="profile.html">
+                   My Profile
+                  </a>
+                  <a class="text-light" href="payment.html">
+                   WishList
+                  </a>
+               <a class="text-light" href="#contact">
+                Contact
+               </a>
+               <a class="text-light" href="chatbot.html">
+                ChatBot Assistant
+               </a>
+        </nav>
+    </header>
+    <main class="p-8">
+        <section class="text-center mb-8">
+            <h1 class="text-3xl font-bold mb-2">Community Forums</h1>
+            <p class="text-lg">Join communities, chats, and philatelic channels.</p>
+        </section>
+        <div class="forum-container">
+            <div class="forum-header">
+                <h2 class="text-xl font-bold">Available Communities</h2>
+            </div>
+            <div class="forum-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Community 1 -->
+                <div class="forum-card">
+                    <h3 class="text-lg font-bold">General Philately</h3>
+                    <p>Discuss general topics related to stamp collecting and philately.</p>
+                    <button>Join Community</button>
+                </div>
+                <!-- Community 2 -->
+                <div class="forum-card">
+                    <h3 class="text-lg font-bold">Rare Stamps</h3>
+                    <p>Share and discuss information about rare and valuable stamps.</p>
+                    <button>Join Community</button>
+                </div>
+                <!-- Community 3 -->
+                <div class="forum-card">
+                    <h3 class="text-lg font-bold">Stamp Identification</h3>
+                    <p>Get help identifying stamps and learn about their history.</p>
+                    <button>Join Community</button>
+                </div>
+                <!-- Community 4 -->
+                <div class="forum-card">
+                    <h3 class="text-lg font-bold">Stamp Trading</h3>
+                    <p>Connect with other collectors to trade stamps.</p>
+                    <button>Join Community</button>
+                </div>
+                <!-- Community 5 -->
+                <div class="forum-card">
+                    <h3 class="text-lg font-bold">Philatelic Exhibitions</h3>
+                    <p>Discuss upcoming exhibitions and share experiences from past events.</p>
+                    <button>Join Community</button>
+                </div>
+                <!-- Community 6 -->
+                <div class="forum-card">
+                    <h3 class="text-lg font-bold">Beginner Collectors</h3>
+                    <p>Get tips and advice for those new to stamp collecting.</p>
+                    <button>Join Community</button>
+                </div>
+                <!-- Add more communities as needed -->
+            </div>
+        </div>
+        <section class="text-center mt-8">
+            <h2 class="text-2xl font-bold mb-4">Philatelic Channels</h2>
+            <div class="forum-container">
+                <div class="forum-header">
+                    <h2 class="text-xl font-bold">Join a Channel</h2>
+                </div>
+                <div class="forum-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Channel 1 -->
+                    <div class="forum-card">
+                        <h3 class="text-lg font-bold">Stamp News</h3>
+                        <p>Stay updated with the latest news in the world of philately.</p>
+                        <button>Join Channel</button>
+                    </div>
+                    <!-- Channel 2 -->
+                    <div class="forum-card">
+                        <h3 class="text-lg font-bold">Auction Alerts</h3>
+                        <p>Get alerts for upcoming stamp auctions and sales.</p>
+                        <button>Join Channel</button>
+                    </div>
+                    <!-- Channel 3 -->
+                    <div class="forum-card">
+                        <h3 class="text-lg font-bold">Collector Stories</h3>
+                        <p>Read and share stories from fellow stamp collectors.</p>
+                        <button>Join Channel</button>
+                    </div>
+                    <!-- Channel 4 -->
+                    <div class="forum-card">
+                        <h3 class="text-lg font-bold">Stamp Care Tips</h3>
+                        <p>Learn how to properly care for and preserve your stamp collection.</p>
+                        <button>Join Channel</button>
+                    </div>
+                    <!-- Channel 5 -->
+                    <div class="forum-card">
+                        <h3 class="text-lg font-bold">Philatelic History</h3>
+                        <p>Explore the rich history of stamps and postal services.</p>
+                        <button>Join Channel</button>
+                    </div>
+                    <!-- Channel 6 -->
+                    <div class="forum-card">
+                        <h3 class="text-lg font-bold">Market Trends</h3>
+                        <p>Stay informed about the latest trends in the stamp market.</p>
+                        <button>Join Channel</button>
+                    </div>
+                    <!-- Add more channels as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-300 p-4 mt-8">
+        <div class="flex justify-between">
+            <div>
+                <h3 class="text-lg font-bold mb-2">Quick Links</h3>
+                <ul>
+                    <li><a class="text-gray-700" href="#">About Us</a></li>
+                    <li><a class="text-gray-700" href="#">Privacy Policy</a></li>
+                    <li><a class="text-gray-700" href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Contact Us</h3>
+                <p>Email: support@stampnation.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>StampNation - Admin Login</title>
+    <link rel="icon" href="img.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 font-roboto">
+    <header class="flex justify-between items-center p-6 bg-white shadow-md">
+        <h1 class="text-xl font-bold"> <i class="fas fa-stamp text-xl mr-2">
+        </i>StampNation</h1>
+        <a href="loginSign.html">
+        <button class="bg-black text-white px-4 py-2 rounded">Join as User</button>
+    </a>
+    <a href="index.html">
+        <button class="bg-black text-white px-4 py-2 rounded">Back To Landing Page</button>
+    </a>
+    </header>
+    <main class="max-w-7xl mx-auto p-6">
+        <div class="flex justify-center items-center min-h-screen">
+            <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+                <h2 class="text-2xl font-bold mb-6 text-center">Admin Login</h2>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="admin-email">Email</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="admin-email" type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="admin-password">Password</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="admin-password" type="password" placeholder="Enter your password">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <a href="adminDash.html">
+                        <button class="bg-black text-white px-4 py-2 rounded focus:outline-none focus:shadow-outline" type="button">Login</button>
+                    </a>
+                        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-white p-6 shadow-md">
+        <div class="flex justify-between items-center">
+            <p class="text-gray-600">StampNation</p>
+            <div class="flex space-x-4">
+                <a class="text-gray-600" href="#">Instagram</a>
+                <a class="text-gray-600" href="#">Twitter</a>
+                <a class="text-gray-600" href="#">Discord</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

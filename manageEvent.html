@@ -1,0 +1,233 @@
+<html>
+ <head>
+    <link rel="icon" href="img16.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 font-roboto">
+  <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+   <div class="flex items-center">
+    <i class="fas fa-stamp text-xl mr-2">
+    </i>
+    <span class="text-xl font-bold">
+     Stamp Nation
+    </span>
+   </div>
+   <nav class="space-x-4">
+    <a class="text-gray-300 hover:text-white" href="adminDash.html">
+        Back to DashBoard
+       </a>
+       <a class="text-gray-300 hover:text-white" href="admin.html">
+           LogOut
+          </a>
+   </nav>
+  </header>
+  <main class="p-8">
+   <section class="text-center mb-8">
+    <h1 class="text-4xl font-bold mb-2">
+     Admin Dashboard
+    </h1>
+    <p class="text-lg text-gray-700">
+     Manage events and user activities.
+    </p>
+   </section>
+   <section class="mb-8">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+     <h2 class="text-2xl font-bold mb-4">
+      Event Management
+     </h2>
+     <table class="min-w-full bg-white">
+      <thead>
+       <tr>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Event ID
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Title
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Date
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Location
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Status
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Actions
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         1
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Stamp Exhibition
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         2023-10-15
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Mumbai
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Upcoming
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         <button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-700">
+          Edit
+         </button>
+         <button class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
+          Delete
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         2
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Philatelist Meetup
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         2023-11-20
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Kolkata
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Upcoming
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         <button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-700">
+          Edit
+         </button>
+         <button class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
+          Delete
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         3
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Stamp Auction
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         2023-12-05
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Delhi
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Upcoming
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         <button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-700">
+          Edit
+         </button>
+         <button class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
+          Delete
+         </button>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </section>
+   <section class="mb-8">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+     <h2 class="text-2xl font-bold mb-4">
+      Add New Event
+     </h2>
+     <form>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="event-title">
+        Title
+       </label>
+       <input class="w-full p-2 rounded-lg border border-gray-300" id="event-title" placeholder="Enter event title" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="event-date">
+        Date
+       </label>
+       <input class="w-full p-2 rounded-lg border border-gray-300" id="event-date" placeholder="Enter event date" type="date"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="event-location">
+        Location
+       </label>
+       <input class="w-full p-2 rounded-lg border border-gray-300" id="event-location" placeholder="Enter event location" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="event-status">
+        Status
+       </label>
+       <select class="w-full p-2 rounded-lg border border-gray-300" id="event-status">
+        <option value="upcoming">
+         Upcoming
+        </option>
+        <option value="completed">
+         Completed
+        </option>
+       </select>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="event-description">
+        Description
+       </label>
+       <textarea class="w-full p-2 rounded-lg border border-gray-300" id="event-description" placeholder="Enter event description" rows="6">
+       </textarea>
+      </div>
+      <button class="bg-gray-800 text-white p-2 rounded-lg w-full hover:bg-gray-700" type="submit">
+       Add Event
+      </button>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-gray-800 text-white p-4">
+   <div class="flex justify-between">
+    <div>
+     <h3 class="text-lg font-bold mb-2">
+      Quick Links
+     </h3>
+     <ul>
+      <li>
+       <a class="text-gray-300 hover:text-white" href="#">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-300 hover:text-white" href="#">
+        Privacy Policy
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-300 hover:text-white" href="#">
+        Terms of Service
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-lg font-bold mb-2">
+      Contact Us
+     </h3>
+     <p>
+      Email: support@stampnation.com
+     </p>
+     <p>
+      Phone: (123) 456-7890
+     </p>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

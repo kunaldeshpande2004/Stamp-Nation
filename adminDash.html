@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>StampNation - Admin Dashboard</title>
+    <link rel="icon" href="img16.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 font-roboto">
+    <header class="flex justify-between items-center p-6 bg-white shadow-md">
+       
+        <span class="text-xl font-bold">
+            <i class="fas fa-stamp text-xl mr-2">
+            </i>
+         Stamp Nation
+        </span>
+        <a href="admin.html">
+        <button class="bg-black text-white px-4 py-2 rounded">LogOut</button>
+    </a>
+    </header>
+    <main class="max-w-7xl mx-auto p-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <aside class="bg-white p-6 rounded shadow-md">
+                <h2 class="text-xl font-bold mb-4">Admin Dashboard</h2>
+                <nav>
+                    <ul class="space-y-4">
+                        <li><a class="text-gray-700 hover:text-black" href="manageuser.html">Manage Users</a></li>
+                        <li><a class="text-gray-700 hover:text-black" href="manageContents.html">Manage Content</a></li>
+                        <li><a class="text-gray-700 hover:text-black" href="userAnylasis.html">User Analysis</a></li>
+                        <li><a class="text-gray-700 hover:text-black" href="manageEvent.html">Manage Events</a></li>
+                        <li><a class="text-gray-700 hover:text-black" href="revenue.html">Revenue Analysis</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="col-span-3 bg-white p-6 rounded shadow-md">
+                <h2 class="text-2xl font-bold mb-6">Welcome, Admin</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="manageuser.html">
+                    <div class="bg-gray-200 p-4 rounded shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Manage Users</h3>
+                        <p class="text-gray-700">View, edit, and delete user accounts.</p>
+                       
+                    </div>
+                </a>
+                    <a href="manageContents.html">
+                    <div class="bg-gray-200 p-4 rounded shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Manage Content</h3>
+                        <p class="text-gray-700">Add, edit, and delete content on the platform.</p>
+                    
+                    </div>
+                </a>
+                    <a href="userAnylasis.html">
+                    <div class="bg-gray-200 p-4 rounded shadow-md">
+                        <h3 class="text-xl font-bold mb-2">User Analysis</h3>
+                        <p class="text-gray-700">Analyze user activity and engagement.</p>
+                     
+                    </div>
+                </a>
+                    <a href="manageEvent.html">
+                    <div class="bg-gray-200 p-4 rounded shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Manage Events</h3>
+                        <p class="text-gray-700">Create and manage events for the community.</p>
+                    </div>
+                </a>
+                    <a href="revenue.html">
+                    <div class="bg-gray-200 p-4 rounded shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Revenue Analysis</h3>
+                        <p class="text-gray-700">View and analyze revenue data.</p>
+                    </div>
+                </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="bg-white p-6 shadow-md mt-6">
+        <div class="flex justify-between items-center">
+            <p class="text-gray-600">StampNation</p>
+            <div class="flex space-x-4">
+                <a class="text-gray-600" href="#">Instagram</a>
+                <a class="text-gray-600" href="#">Twitter</a>
+                <a class="text-gray-600" href="#">Discord</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

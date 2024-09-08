@@ -1,0 +1,216 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+    <link rel="icon" href="img16.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 font-roboto">
+  <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+   <div class="flex items-center">
+    <i class="fas fa-stamp text-xl mr-2">
+    </i>
+    <span class="text-xl font-bold">
+     Stamp Nation
+    </span>
+   </div>
+   <nav class="space-x-4">
+    
+    <a class="text-gray-300 hover:text-white" href="adminDash.html">
+     Back to DashBoard
+    </a>
+    <a class="text-gray-300 hover:text-white" href="admin.html">
+        LogOut
+       </a>
+   
+   </nav>
+  </header>
+  <main class="p-8">
+   <section class="text-center mb-8">
+    <h1 class="text-4xl font-bold mb-2">
+     Admin Dashboard
+    </h1>
+    <p class="text-lg text-gray-700">
+     Manage users and their activities.
+    </p>
+   </section>
+   <section class="mb-8">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+     <h2 class="text-2xl font-bold mb-4">
+      User Management
+     </h2>
+     <table class="min-w-full bg-white">
+      <thead>
+       <tr>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         User ID
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Username
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Email
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Role
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Actions
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         1
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         user1
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         user1@example.com
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         User
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         <button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-700">
+          Edit
+         </button>
+         <button class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
+          Delete
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         2
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         user2
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         user2@example.com
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Admin
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         <button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-700">
+          Edit
+         </button>
+         <button class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
+          Delete
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         3
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         user3
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         user3@example.com
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         User
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         <button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-700">
+          Edit
+         </button>
+         <button class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
+          Delete
+         </button>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </section>
+   <section class="mb-8">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+     <h2 class="text-2xl font-bold mb-4">
+      Add New User
+     </h2>
+     <form>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="new-username">
+        Username
+       </label>
+       <input class="w-full p-2 rounded-lg border border-gray-300" id="new-username" placeholder="Enter username" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="new-email">
+        Email
+       </label>
+       <input class="w-full p-2 rounded-lg border border-gray-300" id="new-email" placeholder="Enter email" type="email"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="new-password">
+        Password
+       </label>
+       <input class="w-full p-2 rounded-lg border border-gray-300" id="new-password" placeholder="Enter password" type="password"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="new-role">
+        Role
+       </label>
+       <select class="w-full p-2 rounded-lg border border-gray-300" id="new-role">
+        <option value="user">
+         User
+        </option>
+        <option value="admin">
+         Admin
+        </option>
+       </select>
+      </div>
+      <button class="bg-gray-800 text-white p-2 rounded-lg w-full hover:bg-gray-700" type="submit">
+       Add User
+      </button>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-gray-800 text-white p-4">
+   <div class="flex justify-between">
+    <div>
+     <h3 class="text-lg font-bold mb-2">
+      Quick Links
+     </h3>
+     <ul>
+      <li>
+       <a class="text-gray-300 hover:text-white" href="#">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-300 hover:text-white" href="#">
+        Privacy Policy
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-300 hover:text-white" href="#">
+        Terms of Service
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-lg font-bold mb-2">
+      Contact Us
+     </h3>
+     <p>
+      Email: support@stampnation.com
+     </p>
+     <p>
+      Phone: (123) 456-7890
+     </p>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
